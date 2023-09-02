@@ -1,0 +1,27 @@
+{% extends "base.html"%}
+{% block content %}
+
+<div class="jumbotron">
+<h2>P+P=에 오신걸 환영합니다!</h2>
+<p>아래 칸에 사용자의 정보를 입력해주세요.</p>
+<form action="{{url_for('report')}}" >
+        이름 : <input type="text" name="user"><br>
+        목적지 위도 : <input type="text" name="destination_latitude"><br>
+        목적지 경도 : <input type="text" name="destination_longitude"><br>
+        여행일수 : <input type="text" name="schedule"><br>
+        경비 : <input type="text" name="expense"><br>
+        여행원 : <input type="text" name="people"><br>
+        나이 : <input type="text" name="age"><br>
+        집 위도 : <input type="text" name="hometown_latitude"><br>
+        집 경도 : <input type="text" name="hometown_longitude"><br>
+        성향액티비티 : <input type="text" name="tendency_activity"><br>
+        성향관람 : <input type="text" name="tendency_preview"><br>
+        여행 시작 시간 : <input type="text" name="start_time"><br>
+        여행 끝나는 시간: <input type="text" name="finish_time"><br>
+
+        <input class="btn btn-primary" type="submit" value="전송하기">        
+</form>
+
+
+
+{% endblock %}

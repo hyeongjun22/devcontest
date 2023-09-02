@@ -1,0 +1,17 @@
+{% extends "base.html"%}
+{% block content %}
+<div class="jumbotron">
+  <h1>환영합니다 {{user}}님!</h1>
+  <p>
+    같이 갈 인원은 {{data[0],data[1]}}님!
+    {{data[2]}}
+  </p>
+  {% if report %}
+
+
+
+  {% endif %}
+
+</div>
+
+{% endblock %}
